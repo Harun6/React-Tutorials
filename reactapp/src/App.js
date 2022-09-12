@@ -6,7 +6,7 @@ function App() {
  // const test = 34;
  // const isAuth = true;
   return (
-    <div className="App">
+    <div className="container">
       {/*<h1 className="naber">Hello React</h1>
       <label htmlFor =""></label>
       <h4>{test}</h4>              {/*JavaScript is written in square brackets.*/}
@@ -21,18 +21,7 @@ function App() {
       {/* App Component*/}
       <h4>App Component</h4>
       <User/>
-      <User/>
-      <User/>
-      <User/>
-
-      <User/>
-      <User/>
-
-      <User/>
-      <User/>
-      <User/>
-
-      <User/>
+      
     </div>
   );
 }
