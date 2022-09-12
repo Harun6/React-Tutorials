@@ -1,6 +1,8 @@
 
-import User from './Component/User';
+import Navbar from "./Component/Navbar";
+import User from "./Component/User";
 import './App.css';
+
 
 function App() {
  // const test = 34;
@@ -18,10 +20,22 @@ function App() {
           : null
         }
       </div>*/}
-      {/* App Component*/}
+      {/* App Component
       <h4>App Component</h4>
-      <User/>
-      
+      <User/>*/}
+      <Navbar title ="User App "/>
+      <hr/>   
+      <User
+      name = "Harun Akgül"
+      department = "Bilişim"
+      //salary = "5000"
+      />   
+
+      <User
+      name = "Mehmet Yıldız"
+      department = "Bilişim"
+      salary = "6000"
+      /> 
     </div>
   );
 }
