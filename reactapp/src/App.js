@@ -28,7 +28,7 @@ function App() {
       <User
       name = "Harun Akgül"
       department = "Bilişim"
-      //salary = "5000"
+      salary = "5000"
       />   
 
       <User
