@@ -3,6 +3,14 @@ import PropTypes from 'prop-types';
 
 
  class User extends Component {
+ 
+  constructor(props){
+    super(props);
+    
+    this.state = {
+      isVisible : false
+    }
+  }
   
   render() {
     // Destructing
@@ -14,10 +22,13 @@ import PropTypes from 'prop-types';
             <h4 className = 'd-inline'>{name}</h4>
             <i className = 'far fa-trash-alt' style = {{cursor : "pointer"}}></i>
           </div>
-          <div className = 'card-body'>
+          {
+            isVisible ? <div className = 'card-body'>
             <p className = 'card-text'> Salary : {salary}</p>
             <p className = 'card-text'> Department : {department}</p>
-          </div>
+          </div> : null
+          }
+          
         </div>        
       </div>
     )
